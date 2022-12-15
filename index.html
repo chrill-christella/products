@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>products</title>
+</head>
+<body>
+  <section class="content">
+    <div class="left">
+      <div ><h1 class="section-title">Add product</h1></div>
+      <form class="form" action="" method="post">
+        <div class="form-item">
+          <label for="title" class="input-label">Title </label></br>
+          <input type="text" name="title" id="title" class="input" placeholder="Jordans" required>
+        </div>
+        <div class="form-item">
+          <label for="description" class="input-label">Description </label> </br>
+          <textarea name="description" id="description" class="textarea" placeholder="Some description goes here" required></textarea>
+        </div>
+        <div class="form-item">
+          <label for="date" class="input-label">Date </label></br>
+          <input type="date" name="date" id="date" class="input" style="width:96.8% !important;" required>
+        </div>
+        <div class="form-item">
+          <label for="price" class="input-label">Price in $ </label></br>
+          <input type="number" name="price" id="price" class="input" placeholder="10" required>
+        </div>
+        <div class="form-item">
+          <label for="category" class="input-label">Category </label></br>
+          <select name="category" id="category" class="input" style="width:96.8% !important;" required>
+            <option value="">Select Category</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Books">Books</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Food & Beverage">Food & Beverage</option>
+            <option value="Pet Products">Pet Products</option>
+            <option value="Toys">Toys</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label for="picture" class="input-label">Product Picture </label></br>
+          <input type="file" name="picture" id="picture" class="custom-file-input" required>
+        </div>
+        <div class="form-item">
+          <label for="availability" class="input-label">Availability</label></br>
+          <input type="number" name="availability" id="availability" class="input" placeholder="2" required>
+        </div>
+        <div class="form-item">
+          <button type="submit" class="add-btn" >Add</button>
+        </div>
+      </form>
+    </div>
+    <div class="right">
+      <div ><h1 class="section-title">Product list</h1></div>
+      <div class="product-list">
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
